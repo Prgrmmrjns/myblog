@@ -1,14 +1,14 @@
 ---
-title: You are not an impostor
-date: 11/01/2024
+title: The secret patterns controlling our genes
+date: 03/03/2025
 description: "In the theater of content creation, many backstage whisper a
   phrase tinged with doubt: 'I m not legitimate, others are so much better.'
   This melody of insecurity, often played over and over in the minds of emerging
   creators, is the first act of a much larger work: the conquest of one's own
   legitimacy."
 tags:
-  - Creation
-  - Productivity
+  - Epigenetics
+  - Machine Learning
 image: https://canvas.hrcd.fr/articles/trap-of-perfection.jpg
 readingTime: "3"
 ---

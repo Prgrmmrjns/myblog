@@ -1,15 +1,15 @@
 ---
-title: Finally launch your portfolio
-date: 20/10/2023
+title: How wearable devices can help with Diabetes management
+date: 03/03/2025
 description: Aiming for perfectionism is a very good state of mind. On the other
   hand, working until perfectionism is 100% can also be bad. Here are some tips
   to help you get your portfolio off the ground.
 tags:
-  - Portfolio
-  - Development
-  - Design
-  - Productivity
-image: https://canvas.hrcd.fr/articles/launch-your-porfolio.jpg
+  - Wearables
+  - Diabetes
+  - Health
+  - Machine Learning
+image: /articles/wearable-diabetes-cover.png
 readingTime: "5"
 ---
 
@@ -17,7 +17,7 @@ readingTime: "5"
 
 Creating a portfolio as a development, design or tech professional is a journey punctuated by complex choices. One of the most prevalent of these dilemmas lies in the delicate balance between striving for perfection and the need to launch quickly. Explore with me the nuances of these contradictory perspectives.
 
-![preview](/articles/launch-your-porfolio.jpg)
+![preview](/articles/wearable-diabetes-cover.png)
 
 ### The aspiration to perfection: an unattainable ideal?
 

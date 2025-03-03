@@ -1,33 +1,40 @@
 ---
-title: 5 Amazing Raycast Snippets for Enhancing Your Nuxt (Vue) Projects
-date: 22/01/2024
-description: In the realm of web development, where efficiency is as valuable as
-  expertise, tools that streamline and simplify our workflow are indispensable.
-  Among these, Raycast snippets emerge as a powerful ally, especially for those
-  working with Nuxt and Vue frameworks. But what exactly are these snippets, and
-  how can they transform your development experience?
+title: How Large Language Models can help with the diagnosis of Rare Diseases
+date: 03/03/2025
+description: In the complex world of medical diagnostics, rare diseases present unique challenges due to their uncommon nature and often puzzling symptoms. Large Language Models (LLMs) are emerging as powerful tools that can analyze vast medical literature, recognize subtle symptom patterns, and assist healthcare professionals in identifying these elusive conditions, potentially reducing the years-long diagnostic odyssey many patients endure.
 tags:
-  - Nuxt
-  - Vue
-  - Raycast
-  - Productivity
-image: https://canvas.hrcd.fr/articles/5-raycast-snippets.jpg
+  - Machine Learning
+  - Rare Diseases
+  - Diagnosis
+image: /articles/llms-rare-diseases-cover.png
 readingTime: "10"
 ---
 
-![preview](/articles/5-raycast-snippets.jpg)
+![preview](/articles/llms-rare-diseases-cover.png)
 
-In the realm of web development, where efficiency is as valuable as expertise, tools that streamline and simplify our workflow are indispensable. Among these, Raycast snippets emerge as a powerful ally, especially for those working with Nuxt and Vue frameworks. But what exactly are these snippets, and how can they transform your development experience?
+## The Curious Case of Rare Diseases
 
-## What Are Raycast Snippets?
+Imagine being so special that doctors need a medical detective to figure you out. Welcome to the world of rare diseases, where being one-in-a-million isn't just a compliment—it's a diagnosis!
 
-Raycast snippets are small, reusable pieces of text or code that can be quickly inserted into your work. Think of them as shortcuts for frequently used content - whether it's code, canned email responses, or even emojis. They are designed to save time and reduce repetitive typing, allowing developers and writers to work more efficiently.
+### Not-So-Common Facts
 
-## How to Use Raycast Snippets
+Rare diseases affect approximately 300 million people worldwide—that's like the entire population of the United States deciding to collect unusual medical conditions. Despite the name "rare," these conditions collectively are about as rare as coffee shops in Seattle.
 
-Using Raycast snippets is straightforward. Once you've created or imported a snippet within the Raycast app, you can assign a specific keyword to it. This keyword acts as a trigger - whenever you type it in any application, the snippet will automatically expand in place, replacing the keyword with the full text or code of the snippet.
+The average patient with a rare disease embarks on what medical professionals call the "diagnostic odyssey"—a fancy term for "visiting 8 different specialists who all scratch their heads while your symptoms throw a party." This journey typically takes 4-7 years, during which patients might hear phrases like "it's probably just stress" more times than they hear "good morning."
 
-For instance, if you have a snippet for a standard email sign-off, you can assign a keyword like `sig1`. Typing `sig1` in an email will then automatically expand to the full signature text. This feature is especially useful in coding, where you can have snippets for common code patterns or configurations.
+### Meet Fibrodysplasia Ossificans Progressiva (FOP)
+
+Take FOP, for example—a condition where your body thinks, "You know what would make this muscle injury better? Turning it into bone!" It affects just 1 in 2 million people, making it rarer than finding someone who hasn't binged a streaming show.
+
+Patients with FOP gradually develop a second skeleton (because apparently, one wasn't enough). Doctors often misdiagnose it as cancer or fibrosis, and unnecessary biopsies can actually trigger more bone formation—talk about adding insult to injury!
+
+### AI to the Rescue (Without the Cape)
+
+Enter Large Language Models—the medical equivalent of that friend who somehow remembers every obscure fact from every conversation ever. These AI systems can process thousands of research papers, clinical notes, and genetic data faster than a doctor can say "I'll need to consult with a colleague."
+
+When presented with a constellation of seemingly unrelated symptoms, LLMs can suggest rare conditions that might not immediately come to mind for physicians who haven't seen a case since medical school (if ever).
+
+In a world where being rare makes diagnosis difficult, AI doesn't forget the zebras while looking for horses.
 
 ![snippets-exemple](/articles/snippets-exemple.gif)
 
