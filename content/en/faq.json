@@ -1,38 +1,17 @@
 {
   "title": "FAQ",
-  "subtitle": "Things I get asked a lot",
+  "subtitle": "What you should know about me",
   "faqQuestions": [
     {
-      "title": "Services",
+      "title": "Science and Programming",
       "questions": [
         {
-          "label": "What services do you offer?",
-          "content": "I offer a range of services including web design, web development, branding, and photography. I can also help with SEO and social media marketing."
+          "label": "Which scientific paper is your favorite and why?",
+          "content": "Attention is all you need by Vaswani et al. (2017) is my favorite scientific paper. It introduced the Transformer model, which is a powerful architecture for natural language processing tasks. I like it because it's a simple and effective approach to the problem of sequence-to-sequence learning. The figures are also beautiful and the paper is well written."
         },
         {
-          "label": "Can you teach me how to make a website?",
-          "content": "I don't offer courses at the moment, but I can recommend resources and advice to help you get the most out of your learning."
-        }
-      ]
-    },
-    {
-      "title": "Pricing",
-      "questions": [
-        {
-          "label": "How much does a project cost?",
-          "content": "The cost of a project depends on many factors, such as the size of the project, the features, the development time, etc. The initial amount of my web services starts at 2000€, with an average between 3000€ and 10000€. For any other design or consulting service, I usually charge 450€ per day."
-        },
-        {
-          "label": "How does payment work for a project?",
-          "content": "I ask for a 40% deposit before starting a project, and the remaining 60% after successful delivery. I accept payments by bank transfer, PayPal, etc..."
-        },
-        {
-          "label": "How long does a project take?",
-          "content": "It's difficult to give an exact estimate, as each project is different, but the majority of my past work has taken between 2 weeks and 2 months."
-        },
-        {
-          "label": "Do you offer discounts?",
-          "content": "I offer a 15% discount for students and non-profit organizations."
+          "label": "What is your favorite programming language?",
+          "content": "Python. No discussion here. It is just plain simple and works. It is really flexible and has a great community. The only downside is that it is not the fastest language but with special libraries like NumPy, SciPy, Pandas, etc. it is really powerful."
         }
       ]
     },
@@ -40,12 +19,33 @@
       "title": "Personal",
       "questions": [
         {
-          "label": "What do you enjoy most about this work?",
-          "content": "I love learning new things and being able to create just about anything from scratch, creating beautiful things that people will use and appreciate."
+          "label": "Regarding the current world situation, what are you most concerned about?",
+          "content": "Climate change is a big issue for me. Since the industrial time the average world temperature has increased by 1.5°C. This is already a lot and we need to act now to avoid a catastrophic situation. Else we will be surprised by frequent heat waves, droughts, floods and other extreme weather events. Besides the rise of populism and nationalism is also a big concern. It is important to stay open minded and to listen to each other."
         },
         {
-          "label": "Hobbies outside of work?",
-          "content": "I love what I do, so I usually spend a lot of time working on personal projects, photography, etc. I'm also a big sports fan. I often go to the gym and I recently started climbing!"
+          "label": "What is your favorite book?",
+          "content": "Dune by Frank Herbert. It is a great story about power, politics, ecology and the environment. It is also a great story about family and friendship."
+        },
+        {
+          "label": "What is your favorite sport?",
+          "content": "I love to play football. It is a great sport to play with friends and to stay fit. I also like to go to the gym, running, cycling, swimming and volleyball."
+        },
+        {
+          "label": "What is your favorite food?",
+          "content": "Curry. There is not really an exact curry recipe I think of but generally a curry with a lot of fresh vegetables, soft tofu and a lot of spices. I love to eat healthy and plant-based food. "
+        }
+      ]
+    },
+    {
+      "title": "Business",
+      "questions": [
+        {
+          "label": "In which position do you see yourself in 5 years?",
+          "content": "I hope that I will have graduated from my PhD by then and will be working as a scientist in a university or research institution on a subject I am passionate about. I love to do science and advance my knowledge in the field of artificial intelligence."
+        },
+        {
+          "label": "Are you open for collaborations?",
+          "content": "Yes, I am always open for collaborations. I am looking for new challenges and new projects. If you have a project in mind, feel free to contact me."
         }
       ]
     }

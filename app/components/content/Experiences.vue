@@ -3,7 +3,7 @@ import type { PropType } from 'vue'
 
 defineProps({
   experiences: {
-    type: Object as PropType<{ title: string, date: string, company: string }[]>,
+    type: Object as PropType<{ title: string, date: string, where: string }[]>,
     required: true,
   },
 })
@@ -28,7 +28,7 @@ defineProps({
           </p>
           <span class="mx-1"> / </span>
           <p>
-            {{ experience.company }}
+            {{ experience.where }}
           </p>
         </div>
       </div>

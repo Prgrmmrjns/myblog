@@ -1,5 +1,8 @@
 <script setup lang="ts">
 const stack = await queryCollection('stack').first()
+const { data: faq } = await useAsyncData('faq', async () => {
+  return await queryCollection('faq_en').first()
+})
 </script>
 
 <template>
@@ -29,8 +32,6 @@ const stack = await queryCollection('stack').first()
             mdc-unwrap="p"
           />
         </div>
-        <AboutSignature class="absolute -bottom-24 right-0 hidden w-40 sm:block" />
-        <AboutSignature class="black absolute -bottom-24 -right-2 w-32 sm:hidden" />
       </div>
     </div>
     <Divider class="my-8" />
@@ -64,18 +65,24 @@ const stack = await queryCollection('stack').first()
             :to="item.link"
             target="_blank"
             :aria-label="item.name + ' link'"
-            class="flex gap-2 p-6"
+            class="flex flex-col items-center justify-center p-6 bg-emerald-200 rounded-lg w-24 h-32"
           >
             <UIcon
               :name="item.icon"
-              class="size-9"
+              class="size-9 mb-3"
               :font-controlled="false"
               :alt="item.name + ' logo'"
               :aria-label="item.name + ' logo'"
             />
+            <span class="text-xs text-black text-center font-medium">{{ item.name }}</span>
           </NuxtLink>
         </SpotlightCard>
       </div>
     </div>
+    <AboutFaq
+      class="mt-8"
+      style="--stagger: 6"
+      data-animate
+    />
   </section>
 </template>

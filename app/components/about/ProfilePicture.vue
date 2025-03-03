@@ -22,8 +22,8 @@ const { profile } = useAppConfig()
           width="256"
           :src="profile.picture"
           class="relative size-64 rounded-xl object-cover grayscale transition-all duration-300 group-hover:grayscale-0"
-          alt="Hugo Richard Profile Picture"
-          aria-label="Hugo Richard Profile Picture"
+          alt="Profile Picture"
+          aria-label="Profile Picture"
         />
       </div>
     </SpotlightCard>
@@ -36,9 +36,9 @@ const { profile } = useAppConfig()
       <NuxtImg
         width="256"
         :src="profile.picture"
-        class="size-64 rounded-xl object-cover transition-all duration-300"
-        alt="Hugo Richard Profile Picture"
-        aria-label="Hugo Richard Profile Picture"
+        class="size-128 rounded-xl object-cover transition-all duration-300"
+        alt="Profile Picture"
+        aria-label="Profile Picture"
       />
     </SpotlightCard>
   </div>

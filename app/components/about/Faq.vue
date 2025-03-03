@@ -23,9 +23,11 @@ const items = computed(() => {
   })
 })
 
+const activeTab = ref(0)
+
 const ui = {
-  root: 'flex items-center gap-4 w-full',
-  list: 'relative flex bg-transparent dark:bg-transparent gap-2',
+  root: 'flex flex-col items-center gap-4 w-full',
+  list: 'relative flex bg-transparent dark:bg-transparent gap-2 flex-wrap justify-center',
   indicator: 'absolute top-[4px] duration-200 ease-out focus:outline-none rounded-full bg-white/10 dark:bg-neutral-900',
   trigger: [
     'relative inline-flex items-center justify-center flex-shrink-0 focus:outline-none transition-colors duration-200 ease-out border-white/10 border-2',
@@ -35,6 +37,16 @@ const ui = {
     'data-[state=inactive]:text-neutral-500 dark:data-[state=inactive]:text-neutral-400',
   ],
   label: 'truncate',
+  content: 'mt-4 w-full',
+  panel: 'w-full focus:outline-none'
+}
+
+// Define custom styles for the tab buttons
+const tabButtonStyles = {
+  base: 'rounded-full border-2 border-white/10 px-4 py-1 font-medium transition-all duration-300 transform',
+  active: 'bg-gradient-to-r from-indigo-500/50 to-purple-500/50 text-white shadow-lg scale-105 border-indigo-400/30',
+  inactive: 'bg-transparent text-neutral-300',
+  hover: 'hover:bg-white/10 hover:text-white hover:shadow-md hover:scale-103',
 }
 </script>
 
@@ -48,21 +60,43 @@ const ui = {
         {{ faq!.subtitle }}
       </p>
     </div>
-    <UTabs
-      :items
-      orientation="horizontal"
-      :ui
-    >
-      <template #content="{ item }">
+    
+    <!-- Custom tab navigation -->
+    <div class="w-full">
+      <div class="mb-6 flex flex-wrap justify-center gap-3">
+        <button
+          v-for="(item, index) in items"
+          :key="index"
+          :class="[
+            tabButtonStyles.base,
+            activeTab === index ? tabButtonStyles.active : tabButtonStyles.inactive,
+            tabButtonStyles.hover
+          ]"
+          @click="activeTab = index"
+        >
+          {{ item.label }}
+        </button>
+      </div>
+      
+      <!-- Display the content for the active tab -->
+      <div 
+        v-for="(item, index) in items" 
+        :key="index" 
+        v-show="activeTab === index"
+        class="transition-opacity duration-300"
+      >
         <UAccordion
           trailing-icon="lucide:plus"
           :items="item.questions"
           :ui="{
             item: 'mb-2 group px-4 transform-gpu rounded-xl border border-white/10 bg-white/5 transition duration-500 will-change-transform hover:bg-white/[0.075]',
             trailingIcon: 'group-data-[state=closed]:rotate-0 group-data-[state=open]:rotate-135',
+            panel: 'p-4',
+            content: 'text-neutral-200',
+            title: 'text-white font-medium',
           }"
         />
-      </template>
-    </UTabs>
+      </div>
+    </div>
   </div>
 </template>

@@ -1,26 +1,18 @@
 export default defineAppConfig({
-  global: {
-    meetingLink: 'https://cal.com/hugorcd/15min',
-    available: true,
-  },
   profile: {
-    name: 'Hugo Richard',
-    job: 'Frontend Architect and Designer',
-    email: 'contact@hrcd.fr',
-    phone: '(+33) 6 21 56 22 18',
-    picture: 'https://avatars.githubusercontent.com/u/71938701?v=4',
+    name: 'Jonas Wolber',
+    job: 'PhD Student in Medical Informatics',
+    email: 'jwolber@ukaachen.de',
+    picture: 'https://www.ukaachen.de/fileadmin/_processed_/1/c/csm_Wolber_Jonas_1733b_aef900aa21.jpg',
   },
   socials: {
-    github: 'https://github.com/HugoRCD',
-    twitter: 'https://twitter.com/HugoRCD__',
-    linkedin: 'https://www.linkedin.com/in/hugo-richard-0801',
-    instagram: 'https://www.instagram.com/hugo.rcd_',
-    spotify: 'https://open.spotify.com/user/yuvl0zpp3bpx4hne1ag7huten?si=df7ee2777c0c4fc4',
+    github: 'https://github.com/Prgrmmrjns',
+    linkedin: 'https://www.linkedin.com/in/jonas-wolber-582b0a1b1/',
   },
   seo: {
-    title: 'Canvas a Nuxt portfolio template',
-    description: 'Canvas is a simple but beautiful portfolio template for designers and developers built with Nuxt and Tailwind CSS. Made with ❤️ by HugoRCD',
-    url: 'https://canvas.hrcd.fr',
+    title: 'Jonas Wolber Blog',
+    description: 'Jonas Wolber Blog',
+    url: 'https://jonaswolber.nuxt.space/en/about',
   },
   ui: {
     colors: {

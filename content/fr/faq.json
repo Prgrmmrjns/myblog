@@ -1,38 +1,17 @@
 {
   "title": "FAQ",
-  "subtitle": "Questions qu'on me pose souvent",
+  "subtitle": "Ce que vous devriez savoir à mon sujet",
   "faqQuestions": [
     {
-      "title": "Services",
+      "title": "Science et Programmation",
       "questions": [
         {
-          "label": "Quels services je propose?",
-          "content": "Je propose principalement des services de développement web et mobile, mais aussi de design et de consulting web. Mon objectif est de vous aider à créer des produits de qualité, qui répondent à vos besoins et à ceux de vos utilisateurs."
+          "label": "Quel est votre article scientifique préféré et pourquoi ?",
+          "content": "Attention is all you need par Vaswani et al. (2017) est mon article scientifique préféré. Il a introduit le modèle Transformer, qui est une architecture puissante pour les tâches de traitement du langage naturel. Je l'apprécie car c'est une approche simple et efficace du problème d'apprentissage séquence à séquence. Les figures sont également magnifiques et l'article est bien rédigé."
         },
         {
-          "label": "Peux-tu m'aider à apprendre à faire un site web?",
-          "content": "Je ne propose pas de cours pour le moment, mais je peux vous recommander des ressources et conseils pour vous orienter au mieux dans votre apprentissage."
-        }
-      ]
-    },
-    {
-      "title": "Tarification",
-      "questions": [
-        {
-          "label": "Combien coûte un projet?",
-          "content": "Le coût d'un projet dépend de nombreux facteurs, tels que la taille du projet, les fonctionnalités, le temps de développement, etc. Le montant initial de mes services web commence à 2000€, avec une moyenne comprise entre 3000€ et 10000€. Pour tout autre service de design ou de consulting, je facture généralement 450€ par jour."
-        },
-        {
-          "label": "Comment fonctionne le paiement pour un projet?",
-          "content": "Je demande un acompte de 40% avant de commencer un projet, et les 60% restants après une livraison réussie. J'accepte les paiements par virement bancaire, PayPal, etc..."
-        },
-        {
-          "label": "Combien de temps dure un projet?",
-          "content": "Il est difficile de donner une estimation précise, car chaque projet est différent, mais la majorité de mes travaux passés ont pris entre 2 semaines et 2 mois."
-        },
-        {
-          "label": "Est-ce que je propose des réductions?",
-          "content": "J'offre une réduction de 15% pour les étudiants et les organisations à but non lucratif."
+          "label": "Quel est votre langage de programmation préféré ?",
+          "content": "Python. Pas de discussion à ce sujet. C'est simplement facile et efficace. C'est vraiment flexible et possède une grande communauté. Le seul inconvénient est qu'il n'est pas le langage le plus rapide, mais avec des bibliothèques spéciales comme NumPy, SciPy, Pandas, etc., il est vraiment puissant."
         }
       ]
     },
@@ -40,12 +19,33 @@
       "title": "Personnel",
       "questions": [
         {
-          "label": "Qu'est-ce que tu préfères dans ce travail?",
-          "content": "J'adore apprendre de nouvelles choses et pouvoir créer à peu près tout à partir de rien, créer de belles choses que les gens utiliseront et apprécieront."
+          "label": "Concernant la situation mondiale actuelle, qu'est-ce qui vous préoccupe le plus ?",
+          "content": "Le changement climatique est un problème majeur pour moi. Depuis l'ère industrielle, la température moyenne mondiale a augmenté de 1,5°C. C'est déjà beaucoup et nous devons agir maintenant pour éviter une situation catastrophique. Sinon, nous serons surpris par des vagues de chaleur fréquentes, des sécheresses, des inondations et d'autres événements météorologiques extrêmes. Par ailleurs, la montée du populisme et du nationalisme est également une grande préoccupation. Il est important de rester ouvert d'esprit et de s'écouter les uns les autres."
         },
         {
-          "label": "Des passions en dehors du travail?",
-          "content": "J'adore ce que je fais, donc je passe généralement beaucoup de temps à travailler sur des projets personnels, la photographie, etc. Je suis aussi un grand accro au sport. Je vais souvent à la salle de sport et j'ai récemment commencé l'escalade !"
+          "label": "Quel est votre livre préféré ?",
+          "content": "Dune de Frank Herbert. C'est une excellente histoire sur le pouvoir, la politique, l'écologie et l'environnement. C'est aussi une belle histoire sur la famille et l'amitié."
+        },
+        {
+          "label": "Quel est votre sport préféré ?",
+          "content": "J'adore jouer au football. C'est un excellent sport à pratiquer avec des amis et pour rester en forme. J'aime aussi aller à la salle de sport, courir, faire du vélo, nager et jouer au volleyball."
+        },
+        {
+          "label": "Quel est votre plat préféré ?",
+          "content": "Le curry. Je ne pense pas à une recette de curry précise, mais généralement un curry avec beaucoup de légumes frais, du tofu moelleux et beaucoup d'épices. J'aime manger sain et à base de plantes."
+        }
+      ]
+    },
+    {
+      "title": "Professionnel",
+      "questions": [
+        {
+          "label": "Dans quelle position vous voyez-vous dans 5 ans ?",
+          "content": "J'espère avoir obtenu mon doctorat d'ici là et travailler en tant que scientifique dans une université ou un institut de recherche sur un sujet qui me passionne. J'adore faire de la science et approfondir mes connaissances dans le domaine de l'intelligence artificielle."
+        },
+        {
+          "label": "Êtes-vous ouvert aux collaborations ?",
+          "content": "Oui, je suis toujours ouvert aux collaborations. Je suis à la recherche de nouveaux défis et de nouveaux projets. Si vous avez un projet en tête, n'hésitez pas à me contacter."
         }
       ]
     }

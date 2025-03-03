@@ -35,25 +35,6 @@
           </h2>
         </div>
 
-        <SettingsAvailability
-          background
-          class="mt-2"
-          style="--stagger: 2"
-          data-animate
-        />
-
-        <!-- social -->
-        <HomeSocial
-          style="--stagger: 3"
-          data-animate
-        />
-
-        <!-- cta -->
-        <HomeCTA
-          style="--stagger: 4"
-          data-animate
-        />
-
         <div
           style="--stagger: 5"
           data-animate
@@ -64,11 +45,6 @@
         </div>
 
         <Divider class="my-9" />
-
-        <HomeFaq
-          style="--stagger: 6"
-          data-animate
-        />
       </div>
     </div>
   </section>
