@@ -1,51 +1,51 @@
 {
   "title": "FAQ",
-  "subtitle": "Ce que vous devriez savoir à mon sujet",
+  "subtitle": "What you should know about me",
   "faqQuestions": [
     {
-      "title": "Science et Programmation",
+      "title": "Science and Programming",
       "questions": [
         {
-          "label": "Quel est votre article scientifique préféré et pourquoi ?",
-          "content": "Attention is all you need par Vaswani et al. (2017) est mon article scientifique préféré. Il a introduit le modèle Transformer, qui est une architecture puissante pour les tâches de traitement du langage naturel. Je l'apprécie car c'est une approche simple et efficace du problème d'apprentissage séquence à séquence. Les figures sont également magnifiques et l'article est bien rédigé."
+          "label": "Which scientific paper is your favorite and why?",
+          "content": "Attention is all you need by Vaswani et al. (2017) is my favorite scientific paper. It introduced the Transformer model, which is a powerful architecture for natural language processing tasks. I like it because it's a simple and effective approach to the problem of sequence-to-sequence learning. The figures are also beautiful and the paper is well written."
         },
         {
-          "label": "Quel est votre langage de programmation préféré ?",
-          "content": "Python. Pas de discussion à ce sujet. C'est simplement facile et efficace. C'est vraiment flexible et possède une grande communauté. Le seul inconvénient est qu'il n'est pas le langage le plus rapide, mais avec des bibliothèques spéciales comme NumPy, SciPy, Pandas, etc., il est vraiment puissant."
+          "label": "What is your favorite programming language?",
+          "content": "Python. No discussion here. It is just plain simple and works. It is really flexible and has a great community. The only downside is that it is not the fastest language but with special libraries like NumPy, SciPy, Pandas, etc. it is really powerful."
         }
       ]
     },
     {
-      "title": "Personnel",
+      "title": "Personal",
       "questions": [
         {
-          "label": "Concernant la situation mondiale actuelle, qu'est-ce qui vous préoccupe le plus ?",
-          "content": "Le changement climatique est un problème majeur pour moi. Depuis l'ère industrielle, la température moyenne mondiale a augmenté de 1,5°C. C'est déjà beaucoup et nous devons agir maintenant pour éviter une situation catastrophique. Sinon, nous serons surpris par des vagues de chaleur fréquentes, des sécheresses, des inondations et d'autres événements météorologiques extrêmes. Par ailleurs, la montée du populisme et du nationalisme est également une grande préoccupation. Il est important de rester ouvert d'esprit et de s'écouter les uns les autres."
+          "label": "Regarding the current world situation, what are you most concerned about?",
+          "content": "Climate change is a big issue for me. Since the industrial time the average world temperature has increased by 1.5°C. This is already a lot and we need to act now to avoid a catastrophic situation. Else we will be surprised by frequent heat waves, droughts, floods and other extreme weather events. Besides the rise of populism and nationalism is also a big concern. It is important to stay open minded and to listen to each other."
         },
         {
-          "label": "Quel est votre livre préféré ?",
-          "content": "Dune de Frank Herbert. C'est une excellente histoire sur le pouvoir, la politique, l'écologie et l'environnement. C'est aussi une belle histoire sur la famille et l'amitié."
+          "label": "What is your favorite book?",
+          "content": "Dune by Frank Herbert. It is a great story about power, politics, ecology and the environment. It is also a great story about family and friendship."
         },
         {
-          "label": "Quel est votre sport préféré ?",
-          "content": "J'adore jouer au football. C'est un excellent sport à pratiquer avec des amis et pour rester en forme. J'aime aussi aller à la salle de sport, courir, faire du vélo, nager et jouer au volleyball."
+          "label": "What is your favorite sport?",
+          "content": "I love to play football. It is a great sport to play with friends and to stay fit. I also like to go to the gym, running, cycling, swimming and volleyball."
         },
         {
-          "label": "Quel est votre plat préféré ?",
-          "content": "Le curry. Je ne pense pas à une recette de curry précise, mais généralement un curry avec beaucoup de légumes frais, du tofu moelleux et beaucoup d'épices. J'aime manger sain et à base de plantes."
+          "label": "What is your favorite food?",
+          "content": "Curry. There is not really an exact curry recipe I think of but generally a curry with a lot of fresh vegetables, soft tofu and a lot of spices. I love to eat healthy and plant-based food. "
         }
       ]
     },
     {
-      "title": "Professionnel",
+      "title": "Business",
       "questions": [
         {
-          "label": "Dans quelle position vous voyez-vous dans 5 ans ?",
-          "content": "J'espère avoir obtenu mon doctorat d'ici là et travailler en tant que scientifique dans une université ou un institut de recherche sur un sujet qui me passionne. J'adore faire de la science et approfondir mes connaissances dans le domaine de l'intelligence artificielle."
+          "label": "In which position do you see yourself in 5 years?",
+          "content": "I hope that I will have graduated from my PhD by then and will be working as a scientist in a university or research institution on a subject I am passionate about. I love to do science and advance my knowledge in the field of artificial intelligence."
         },
         {
-          "label": "Êtes-vous ouvert aux collaborations ?",
-          "content": "Oui, je suis toujours ouvert aux collaborations. Je suis à la recherche de nouveaux défis et de nouveaux projets. Si vous avez un projet en tête, n'hésitez pas à me contacter."
+          "label": "Are you open for collaborations?",
+          "content": "Yes, I am always open for collaborations. I am looking for new challenges and new projects. If you have a project in mind, feel free to contact me."
         }
       ]
     }
