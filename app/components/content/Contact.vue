@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import * as z from 'zod'
 import type { FormSubmitEvent } from '#ui/types'
+import FlyingLetterAnimation from '../FlyingLetterAnimation.vue'
 
 const { profile } = useAppConfig()
 const { t } = useI18n()
@@ -62,6 +63,10 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
         mdc-unwrap="p"
       />
     </h2>
+    
+    <!-- Flying Letter Animation -->
+    <FlyingLetterAnimation />
+    
     <Divider class="mb-8 mt-2" />
     <div class="flex flex-col sm:items-center sm:justify-between">
       <UForm

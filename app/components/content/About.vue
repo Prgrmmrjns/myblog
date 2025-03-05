@@ -3,22 +3,29 @@ const stack = await queryCollection('stack').first()
 const { data: faq } = await useAsyncData('faq', async () => {
   return await queryCollection('faq_en').first()
 })
+
 </script>
 
 <template>
   <section class="mx-auto mt-4 flex max-w-4xl flex-col p-7 sm:mt-20 text-[var(--ui-text-toned)]">
-    <h1 class="font-newsreader italic text-white-shadow text-center text-4xl">
-      <slot
-        name="title"
-        mdc-unwrap="p"
-      />
-    </h1>
+    <div class="flex flex-col items-center mb-6">
+      <h1 class="font-newsreader italic text-white-shadow text-center text-4xl mb-4">
+        <slot
+          name="title"
+          mdc-unwrap="p"
+        />
+      </h1>
+    </div>
     <h2 class="text-center text-lg font-extralight italic text-muted">
       <slot
         name="subtitle"
         mdc-unwrap="p"
       />
     </h2>
+        <!-- Robot Animation -->
+        <div class="flex justify-center my-8">
+      <RobotAnimation />
+    </div>
     <Divider class="mb-8 mt-2" />
     <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
       <AboutProfilePicture />
@@ -40,6 +47,7 @@ const { data: faq } = await useAsyncData('faq', async () => {
       mdc-unwrap="p"
     />
     <Divider class="my-8" />
+
     <div class="flex flex-col gap-3">
       <div class="mb-6 flex flex-col gap-1">
         <h3 class="text-white-shadow font-newsreader italic text-3xl">

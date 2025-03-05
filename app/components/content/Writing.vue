@@ -37,12 +37,17 @@ const toggleTag = (tag: string) => {
 
 <template>
   <section class="mx-auto mt-4 flex max-w-4xl flex-col p-7 sm:mt-20">
-    <h1 class="font-newsreader italic text-white-shadow text-center text-4xl">
-      <slot
-        name="title"
-        mdc-unwrap="p"
-      />
-    </h1>
+    <div class="flex flex-col items-center mb-4">
+      <h1 class="font-newsreader italic text-white-shadow text-4xl mb-6">
+        <slot
+          name="title"
+          mdc-unwrap="p"
+        />
+      </h1>
+      <div class="book-animation-container mb-2">
+        <BookAnimation />
+      </div>
+    </div>
     <h2 class="text-center text-lg font-extralight italic text-muted">
       <slot
         name="subtitle"
@@ -117,3 +122,11 @@ const toggleTag = (tag: string) => {
     </div>
   </section>
 </template>
+
+<style scoped>
+.book-animation-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style>

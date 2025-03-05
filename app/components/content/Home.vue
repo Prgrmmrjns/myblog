@@ -36,12 +36,11 @@
         </div>
 
         <div
-          style="--stagger: 5"
+          style="--stagger: 0; --delay: 5ms"
           data-animate
-          class="mt-12 flex w-full max-w-3xl flex-col gap-4 lg:mt-16"
+          class="mb-6"
         >
-          <!-- projects -->
-          <HomeProjects />
+          <HomeCoffeeAnimation />
         </div>
 
         <Divider class="my-9" />

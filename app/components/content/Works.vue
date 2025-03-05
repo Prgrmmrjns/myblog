@@ -18,13 +18,18 @@ const { data: projects } = await useAsyncData('projects', async () => {
         name="title"
         mdc-unwrap="p"
       />
+      
     </h1>
+    <div class="flex justify-center">
+      <ProjectRocketAnimation />
+    </div>
     <h2 class="text-center text-lg font-extralight italic text-muted">
       <slot
         name="subtitle"
         mdc-unwrap="p"
       />
     </h2>
+    
     <Divider class="mb-8 mt-2" />
     <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
       <ProjectCard
