@@ -56,9 +56,7 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
-    public: {
-      resend: !!process.env.NUXT_PRIVATE_RESEND_API_KEY,
-    },
+    public: {},
   },
 
   routeRules: {
@@ -87,17 +85,7 @@ export default defineNuxtConfig({
     },
   },
 
-  hooks: {
-    'nitro:config': (config) => {
-      if (process.env.NUXT_PRIVATE_RESEND_API_KEY) {
-        config.handlers?.push({
-          method: 'post',
-          route: '/api/emails/send',
-          handler: '~~/server/emails/send.ts',
-        })
-      }
-    },
-  },
+
 
   i18n: {
     locales: [
@@ -126,9 +114,5 @@ export default defineNuxtConfig({
       includeCustomCollections: true,
     },
     provider: 'iconify',
-  },
-
-  ogImage: {
-    zeroRuntime: true,
   },
 })

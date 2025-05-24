@@ -1,52 +1,9 @@
 <script setup lang="ts">
-import * as z from 'zod'
-import type { FormSubmitEvent } from '#ui/types'
 import FlyingLetterAnimation from '../FlyingLetterAnimation.vue'
 
-const { profile } = useAppConfig()
+const { profile, socials } = useAppConfig()
 const { t } = useI18n()
 
-const isResendEnabled = useRuntimeConfig().public.resend
-
-const state = ref({
-  email: '',
-  message: '',
-  phone: '',
-  fullname: '',
-  subject: '',
-})
-
-const schema = z.object({
-  email: z.string().email('Invalid email'),
-  message: z.string().min(10, 'Message is too short'),
-  subject: z.string().min(5, 'Subject is too short'),
-  fullname: z.string().min(3, 'Name is too short'),
-})
-type Schema = z.output<typeof schema>
-
-const loading = ref(false)
-
-async function onSubmit(event: FormSubmitEvent<Schema>) {
-  loading.value = true
-  try {
-    await $fetch('/api/emails/send', {
-      method: 'POST',
-      body: event.data,
-    })
-    state.value = {
-      email: '',
-      message: '',
-      phone: '',
-      fullname: '',
-      subject: '',
-    }
-    toast.success(t('contact.success'))
-  }
-  catch {
-    toast.error(t('contact.error'))
-  }
-  loading.value = false
-}
 </script>
 
 <template>
@@ -68,115 +25,46 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
     <FlyingLetterAnimation />
     
     <Divider class="mb-8 mt-2" />
-    <div class="flex flex-col sm:items-center sm:justify-between">
-      <UForm
-        :state
-        :schema
-        class="flex w-full max-w-[40rem] flex-col gap-3"
-        @submit="onSubmit"
-      >
-        <UFormField
-          label="Fullname"
-          name="fullname"
-          required
+    
+    <div class="flex flex-col items-center justify-center gap-6">
+      <!-- Contact Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 w-full max-w-md">
+        
+        <!-- LinkedIn Button -->
+        <UButton
+          size="lg"
+          variant="outline"
+          color="primary"
+          class="flex-1"
+          :to="socials.linkedin"
+          external
+          target="_blank"
         >
-          <UInput
-            v-model="state.fullname"
-            type="text"
-            autocomplete="name"
-            class="w-full"
-            placeholder="John Doe"
-          />
-        </UFormField>
-
-        <UFormField
-          label="Email"
-          name="email"
-          required
+          <UIcon name="simple-icons:linkedin" class="mr-2" />
+          LinkedIn
+        </UButton>
+      </div>
+      
+      <div class="flex flex-col sm:flex-row gap-4 w-full max-w-md">
+        <!-- GitHub Button -->
+        <UButton
+          size="lg"
+          variant="outline"
+          color="primary"
+          class="flex-1"
+          :to="socials.github"
+          external
+          target="_blank"
         >
-          <UInput
-            v-model="state.email"
-            autocomplete="email"
-            class="w-full"
-            placeholder="john.doe@gmail.com"
-          />
-        </UFormField>
-
-        <UFormField
-          label="Phone"
-          name="phone"
-        >
-          <UInput
-            v-model="state.phone"
-            autocomplete="tel"
-            class="w-full"
-            placeholder="123-456-7890"
-          />
-        </UFormField>
-
-        <UFormField
-          label="Subject"
-          name="subject"
-          required
-        >
-          <UInput
-            v-model="state.subject"
-            class="w-full"
-            :placeholder="$t('contact.subject')"
-          />
-        </UFormField>
-
-        <UFormField
-          label="Message"
-          name="message"
-          required
-        >
-          <UTextarea
-            v-model="state.message"
-            autoresize
-            class="w-full"
-            :rows="4"
-            placeholder="Lets work together!"
-          />
-        </UFormField>
-        <div class="flex justify-center">
-          <UTooltip
-            :disabled="isResendEnabled"
-            :text="$t('contact.disabled')"
-          >
-            <UButton
-              :loading
-              :disabled="!isResendEnabled"
-              type="submit"
-              block
-            >
-              {{ $t("contact.submit") }}
-            </UButton>
-          </UTooltip>
-        </div>
-      </UForm>
-      <Divider class="my-10" />
-      <div class="flex w-full flex-col items-center justify-between gap-4 sm:flex-row">
-        <div class="flex flex-col gap-3">
-          <dd class="flex items-center gap-3 text-neutral-400">
-            <UIcon
-              name="heroicons-envelope"
-              class="size-6"
-              aria-hidden="true"
-            />
-            <UTooltip
-              :text="$t('global.email')"
-              :shortcuts="['⌘', 'O']"
-            >
-              <NuxtLink
-                :to="`mailto:${profile.email}`"
-                class="cursor-pointer transition-colors duration-300"
-              >
-                {{ profile.email }}
-              </NuxtLink>
-            </UTooltip>
-          </dd>
-        </div>
+          <UIcon name="simple-icons:github" class="mr-2" />
+          GitHub
+        </UButton>
+      </div>
+      
+      <!-- Email Display -->
+      <div class="mt-6 text-center">
+        <p class="text-sm text-muted mb-2">Or reach me directly at:</p>
+        <p class="text-lg font-medium text-primary">jwolber@ukaachen.de</p>
       </div>
     </div>
   </section>

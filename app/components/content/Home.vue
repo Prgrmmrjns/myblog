@@ -9,9 +9,6 @@
         class="absolute -top-8 left-1/2 size-72 -translate-x-1/2 rounded-full bg-white/25 blur-[120px] lg:-top-8 lg:size-[32rem] lg:blur-[200px]"
       />
 
-      <!-- profile picture -->
-      <HomeProfilePicture />
-
       <div class="z-20 flex flex-col items-center justify-center">
         <!-- title -->
         <div
@@ -34,12 +31,18 @@
           </h2>
         </div>
 
+        <!-- coffee animation -->
         <div
           style="--stagger: 0; --delay: 5ms"
           data-animate
-          class="mb-6"
+          class="my-6"
         >
           <HomeCoffeeAnimation />
+        </div>
+
+        <!-- profile picture -->
+        <div class="mt-6">
+          <HomeProfilePicture />
         </div>
 
         <Divider class="my-9" />
