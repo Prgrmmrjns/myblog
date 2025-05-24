@@ -56,8 +56,8 @@ x[i](t+1) = x[i](t) + v[i](t+1)
 
 Let's break this down in plain English:
 
-- **v[i](t)**: The particle's current velocity (momentum)
-- **x[i](t)**: The particle's current position
+- **v[i]\(t\)**: The particle's current velocity (momentum)
+- **x[i]\(t\)**: The particle's current position
 - **w**: Inertia weight (how much the particle keeps its current direction)
 - **c1, c2**: Learning factors (how much the particle is attracted to personal vs global bests)
 - **r1, r2**: Random numbers between 0 and 1 (adds exploration randomness)
