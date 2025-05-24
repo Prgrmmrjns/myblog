@@ -21,7 +21,7 @@ const localePath = useLocalePath()
         :animate="false"
         class="border border-white/10"
       >
-        <nav class="z-10 flex h-[50px] justify-around gap-2 p-1 transition-all duration-300 ease-in-out sm:h-[45px] sm:hover:gap-4">
+        <nav class="z-10 flex h-[70px] justify-around gap-2 p-1 transition-all duration-300 ease-in-out sm:h-[65px] sm:hover:gap-4">
           <NuxtLink
             v-for="item in navigation"
             :id="item.name.toLowerCase()"
@@ -33,12 +33,15 @@ const localePath = useLocalePath()
                 : 'text-muted',
             ]"
             :to="localePath(item.to)"
-            class="flex items-center rounded-full border border-transparent px-4 py-1 transition-all duration-300 ease-in-out hover:border-white/5 hover:bg-zinc-900/50 hover:backdrop-blur-3xl sm:px-6"
+            class="flex flex-col items-center rounded-full border border-transparent px-4 py-2 transition-all duration-300 ease-in-out hover:border-white/5 hover:bg-zinc-900/50 hover:backdrop-blur-3xl sm:px-6"
           >
             <UIcon
               :name="item.icon"
-              class="size-7 font-light sm:size-6"
+              class="size-6 font-light sm:size-5"
             />
+            <span class="mt-1 text-xs font-medium">
+              {{ item.name }}
+            </span>
           </NuxtLink>
         </nav>
       </SpotlightButton>
