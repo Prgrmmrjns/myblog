@@ -1,0 +1,1 @@
+import{f as d}from"./D9fbhzvG.js";import{N as a}from"./PJ8GwbwU.js";const w=(t,r,f,...n)=>t[r]?a({...t,[r]:()=>d(t[r](),(f==null?void 0:f.unwrap)||(f==null?void 0:f.mdcUnwrap))},r,f,...n):a(t,r,f,...n);export{w as r};
