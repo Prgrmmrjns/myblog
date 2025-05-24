@@ -15,7 +15,6 @@
       <div class="z-20 flex flex-col items-center justify-center">
         <!-- title -->
         <div
-          class="font-geist"
           style="--stagger: 1; --delay: 10ms"
           data-animate
         >

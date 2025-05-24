@@ -16,7 +16,7 @@ export default defineAppConfig({
   },
   ui: {
     colors: {
-      primary: 'emerald',
+      primary: 'teal',
       neutral: 'neutral',
     },
     notifications: {

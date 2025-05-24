@@ -3,39 +3,31 @@
 
 @import "./animation.css";
 
-@theme {
-  --font-newsreader: "Newsreader", serif;
-  --font-geist: "Geist", sans-serif;
-  --font-mono: "Geist Mono", sans-serif;
+html {
+  @apply bg-[#F5F5F5] dark:bg-[#424242];
+  background-color: #F5F5F5 !important;
+}
 
-  --color-main: var(--ui-bg);
-  --color-secondary: var(--color-secondary);
-  --color-card: var(--color-card);
-  --color-card-hover: var(--color-card-hover);
-  --color-primary: var(--font-primary);
-  --color-muted: var(--font-muted);
-  --color-inverted: var(--font-inverted);
-
-  --color-border-primary: var(--border-primary);
-  --color-border-primary-hover: var(--border-primary-hover);
-  --color-border-muted: var(--border-muted);
-  --color-placeholder: var(--font-placeholder);
+body {
+  @apply bg-[#F5F5F5] dark:bg-[#424242];
+  background-color: #F5F5F5 !important;
 }
 
 html.dark {
-  --ui-bg: var(--color-neutral-950);
-  --bg-secondary: #282828;
-  --bg-card: #282828;
-  --bg-card-hover: #343434;
+  background-color: #424242 !important;
+}
 
-  --font-primary: #ededed;
-  --font-muted: #808080;
-  --font-inverted: #282828;
+body.dark {
+  background-color: #424242 !important;
+}
 
-  --border-primary: #2E2E2E;
-  --border-primary-hover: #3E3E3E;
-  --border-muted: #1C1822;
-  --font-placeholder: #707070;
+#__nuxt {
+  @apply bg-[#F5F5F5] dark:bg-[#424242];
+  background-color: #F5F5F5 !important;
+}
+
+html.dark #__nuxt {
+  background-color: #424242 !important;
 }
 
 html, body, #__nuxt, #__layout {
@@ -48,26 +40,17 @@ html, body, #__nuxt, #__layout {
   }
 
   ::-webkit-scrollbar-track {
-    background: var(--bg-secondary);
+    @apply bg-white dark:bg-[#2E2E2E];
   }
 
   ::-webkit-scrollbar-thumb {
-    background: var(--bg-card);
-    border-radius: 0.5rem;
+    @apply bg-[#E0E0E0] dark:bg-[#555555] rounded-lg;
   }
 }
 
 @layer components {
   .linebreak {
-    position: relative;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: auto;
-    width: 100%;
-    height: 1px;
-    margin: 0 auto;
-    background-image: linear-gradient(96.18deg, rgba(215, 196, 255, 0) 10%, rgba(200, 200, 200, 0.24) 50%, rgba(215, 196, 255, 0) 90%);
+    @apply relative w-full h-px mx-auto bg-gradient-to-r from-transparent via-[#48CFCB]/30 to-transparent;
   }
 
   .text-white-shadow {
@@ -75,8 +58,103 @@ html, body, #__nuxt, #__layout {
   }
 }
 
+/* Enhanced prose styling for articles */
+.prose {
+  @apply text-neutral-800 dark:text-neutral-200;
+}
+
+/* Heading styles with proper spacing */
+.prose h1 {
+  @apply text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-900 dark:text-neutral-100 mt-8 mb-6 first:mt-0;
+}
+
+.prose h2 {
+  @apply text-2xl sm:text-3xl font-bold text-neutral-900 dark:text-neutral-100 mt-8 mb-4;
+}
+
+.prose h3 {
+  @apply text-xl sm:text-2xl font-bold text-neutral-900 dark:text-neutral-100 mt-6 mb-4;
+}
+
+.prose h4 {
+  @apply text-lg sm:text-xl font-bold text-neutral-900 dark:text-neutral-100 mt-6 mb-3;
+}
+
+.prose h5 {
+  @apply text-base sm:text-lg font-bold text-neutral-900 dark:text-neutral-100 mt-4 mb-3;
+}
+
+.prose h6 {
+  @apply text-base font-bold text-neutral-900 dark:text-neutral-100 mt-4 mb-2;
+}
+
+/* Paragraph spacing */
+.prose p {
+  @apply text-base md:text-lg leading-relaxed mb-4;
+}
+
+/* List styling with consistent colors */
+.prose ul {
+  @apply list-disc list-inside space-y-1 mb-4;
+}
+
+.prose ol {
+  @apply list-decimal list-inside space-y-1 mb-4;
+}
+
+.prose li {
+  @apply text-base md:text-lg leading-relaxed text-neutral-800 dark:text-neutral-200;
+}
+
+.prose li::marker {
+  @apply text-neutral-800 dark:text-neutral-200;
+}
+
+/* Special styling for references section */
+.prose h2#references + ol {
+  @apply list-decimal list-inside space-y-2 mt-4;
+}
+
+.prose h2#references + ol li {
+  @apply text-sm md:text-base leading-relaxed text-neutral-800 dark:text-neutral-200;
+}
+
+.prose h2#references + ol li::marker {
+  @apply text-neutral-800 dark:text-neutral-200;
+}
+
+/* Better link styling */
+.prose a {
+  @apply text-blue-600 dark:text-blue-400 underline decoration-blue-500/30 hover:decoration-blue-500 transition-all;
+}
+
+/* Strong text */
+.prose strong {
+  @apply font-semibold text-neutral-900 dark:text-neutral-100;
+}
+
+/* Code block styling */
+.prose pre {
+  @apply bg-neutral-900 dark:bg-neutral-950 text-neutral-100 p-4 rounded-xl overflow-x-auto my-4;
+}
+
+.prose :not(pre) > code {
+  @apply bg-neutral-200 dark:bg-neutral-800 px-1.5 py-0.5 rounded text-sm;
+}
+
+/* Blockquote styling */
+.prose blockquote {
+  @apply border-l-4 border-blue-500 bg-blue-50 dark:bg-blue-950/20 pl-4 py-2 italic my-4;
+}
+
+/* Image styling */
+.prose img {
+  @apply rounded-xl shadow-lg mx-auto my-6 w-full max-w-3xl h-auto;
+}
+
+/* Deprecated writing class - kept for backward compatibility */
 .writing {
-  @apply font-geist text-neutral-700/90 dark:text-neutral-300 leading-relaxed;
+  @apply text-neutral-700/90 dark:text-neutral-300 leading-relaxed;
 
   h1 {
     @apply text-2xl sm:text-3xl text-zinc-900 dark:text-zinc-100 italic font-[600] mb-6 mt-8;

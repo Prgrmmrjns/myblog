@@ -37,6 +37,19 @@
       ]
     },
     {
+      "title": "Medicine",
+      "questions": [
+        {
+          "label": "How do you enivion the medicine and patient care of the future?",
+          "content": "I envision that AI will play a pivotal role in the future of medicine. It will be used to improve the diagnosis of diseases, personalize disease treatment and ensure a cheaper and more accessible healthcare system for everyone."
+        },
+        {
+          "label": "Which organ is your favorite?",
+          "content": "My favorite organ is the brain. It is the most complex organ in the body and it is still not fully understood. The brain is where all our thoughts, feelings and coffee cravings come from. Understanding the brain is not only the path to better dementia care but as the brain controls the excretion of several hormones and neurotransmitters, it is also the key to better treatment of many diseases."
+        }
+      ]
+    },
+    {
       "title": "Business",
       "questions": [
         {

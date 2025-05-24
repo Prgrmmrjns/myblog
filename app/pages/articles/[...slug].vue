@@ -46,7 +46,7 @@ defineOgImage({
     />
     <NuxtLinkLocale
       to="/writing"
-      class="mx-auto my-8 flex cursor-pointer items-center gap-2 px-4 text-muted hover:text-primary transition-colors duration-200 sm:max-w-2xl md:max-w-3xl lg:max-w-4xl"
+      class="mx-auto my-8 flex cursor-pointer items-center gap-2 px-4 text-[#666666] dark:text-[#CCCCCC] hover:text-[#229799] dark:hover:text-[#48CFCB] transition-colors duration-200 sm:max-w-2xl md:max-w-3xl lg:max-w-4xl"
     >
       <UIcon
         name="lucide:arrow-left"
@@ -56,36 +56,38 @@ defineOgImage({
         {{ $t("navigation.writing") }}
       </span>
     </NuxtLinkLocale>
-    <article class="writing mx-auto px-4 sm:max-w-2xl md:max-w-3xl lg:max-w-4xl">
-      <h1>
-        {{ page?.title }}
-      </h1>
-      <div class="info-section mt-1 flex flex-col gap-2 sm:flex-row sm:gap-4">
-        <p>{{ page?.date }}</p>
-        <p class="hidden sm:block">
-          |
-        </p>
-        <p>{{ page?.readingTime }} {{ $t("writing.readingTime") }}</p>
-        <p class="hidden sm:block">
-          |
-        </p>
-        <UTooltip
-          :text="$t('writing.copy_link')"
-          :shortcuts="['⌘', 'K']"
-        >
-          <p
-            class="flex cursor-pointer select-none items-center gap-1 transition-colors duration-200 hover:text-primary"
-            @click="copyArticleLink"
-          >
-            {{ $t("writing.share") }}
+    <article class="prose prose-lg md:prose-xl dark:prose-invert max-w-none px-4 sm:px-6 lg:px-8 mx-auto">
+      <div class="max-w-5xl mx-auto">
+        <h1 class="!text-3xl sm:!text-4xl md:!text-5xl">
+          {{ page?.title }}
+        </h1>
+        <div class="info-section mt-4 mb-8 flex flex-col gap-2 sm:flex-row sm:gap-4 not-prose">
+          <p>{{ page?.date }}</p>
+          <p class="hidden sm:block">
+            |
           </p>
-        </UTooltip>
+          <p>{{ page?.readingTime }} {{ $t("writing.readingTime") }}</p>
+          <p class="hidden sm:block">
+            |
+          </p>
+          <UTooltip
+            :text="$t('writing.copy_link')"
+            :shortcuts="['⌘', 'K']"
+          >
+            <p
+              class="flex cursor-pointer select-none items-center gap-1 transition-colors duration-200 hover:text-primary"
+              @click="copyArticleLink"
+            >
+              {{ $t("writing.share") }}
+            </p>
+          </UTooltip>
+        </div>
+        <ContentRenderer
+          v-if="page"
+          :dir="localeProperties?.dir ?? 'ltr'"
+          :value="page"
+        />
       </div>
-      <ContentRenderer
-        v-if="page"
-        :dir="localeProperties?.dir ?? 'ltr'"
-        :value="page"
-      />
     </article>
   </div>
 </template>

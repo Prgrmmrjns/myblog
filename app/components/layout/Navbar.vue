@@ -19,7 +19,7 @@ const localePath = useLocalePath()
         rounded
         transparent
         :animate="false"
-        class="border border-white/10"
+        class="border border-[#48CFCB]/20 dark:border-[#48CFCB]/30 bg-white/80 dark:bg-[#2E2E2E]/80 backdrop-blur-md"
       >
         <nav class="z-10 flex h-[70px] justify-around gap-2 p-1 transition-all duration-300 ease-in-out sm:h-[65px] sm:hover:gap-4">
           <NuxtLink
@@ -29,11 +29,11 @@ const localePath = useLocalePath()
             :aria-label="item.name + ' navigation link'"
             :class="[
               localePath(item.to) === route.path
-                ? 'border border-white/5 bg-zinc-900/10 text-white/75 shadow-2xl shadow-white/50 backdrop-blur-3xl text-shadow-sm'
-                : 'text-muted',
+                ? 'border border-[#48CFCB]/30 bg-[#48CFCB]/10 text-[#229799] dark:text-[#48CFCB] shadow-lg shadow-[#48CFCB]/20'
+                : 'text-[#666666] dark:text-[#CCCCCC] hover:text-[#229799] dark:hover:text-[#48CFCB]',
             ]"
             :to="localePath(item.to)"
-            class="flex flex-col items-center rounded-full border border-transparent px-4 py-2 transition-all duration-300 ease-in-out hover:border-white/5 hover:bg-zinc-900/50 hover:backdrop-blur-3xl sm:px-6"
+            class="flex flex-col items-center rounded-full border border-transparent px-4 py-2 transition-all duration-300 ease-in-out hover:border-[#48CFCB]/20 hover:bg-[#48CFCB]/5 dark:hover:bg-[#229799]/10 sm:px-6"
           >
             <UIcon
               :name="item.icon"

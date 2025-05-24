@@ -37,9 +37,13 @@ defineShortcuts({
       :page
       :is-writing="route.path.includes('/articles/')"
     />
-    <ContentRenderer
-      :dir="localeProperties?.dir ?? 'ltr'"
-      :value="page"
-    />
+    <article class="prose prose-lg md:prose-xl dark:prose-invert max-w-none px-4 sm:px-6 lg:px-8 mx-auto">
+      <div class="max-w-5xl mx-auto">
+        <ContentRenderer
+          :dir="localeProperties?.dir ?? 'ltr'"
+          :value="page"
+        />
+      </div>
+    </article>
   </div>
 </template>
